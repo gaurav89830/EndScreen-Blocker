@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Endscreen Blocker",
+    "version": "1.0",
+    "description": "Block the annyoing End Screens that appear during the last 5-20 seconds of a video blocking video section",
+    "host_permissions": ["https://www.youtube.com/*"],
+    "icons": {
+        "128": "icon.ico"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["script.js"]
+    }]
+}
